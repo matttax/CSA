@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/task.dir/container.cpp.o CMakeFiles/task.dir/shape.cpp.o CMakeFiles/task.dir/parallelepiped.cpp.o CMakeFiles/task.dir/regtet.cpp.o CMakeFiles/task.dir/sphere.cpp.o CMakeFiles/task.dir/main.cpp.o  -o ../bin/task 

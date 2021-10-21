@@ -1,0 +1,14 @@
+Sorted container: 
+Container contains 12 elements.
+0: It is Parallelepiped: a = 9, b = 1, c = 1. Surface square = 38
+1: It is Regular Tetrahedron: edge = 10. Surface square = 173.205
+2: It is Parallelepiped: a = 1, b = 9, c = 8. Surface square = 178
+3: It is Parallelepiped: a = 3, b = 8, c = 12. Surface square = 312
+4: It is Regular Tetrahedron: edge = 14. Surface square = 339.482
+5: It is Sphere: r = 11. Surface square = 1520.53
+6: It is Regular Tetrahedron: edge = 45. Surface square = 3507.4
+7: It is Sphere: r = 23. Surface square = 6647.61
+8: It is Regular Tetrahedron: edge = 97. Surface square = 16296.9
+9: It is Sphere: r = 90. Surface square = 101788
+10: It is Sphere: r = 100. Surface square = 125664
+11: It is Sphere: r = 102. Surface square = 130741

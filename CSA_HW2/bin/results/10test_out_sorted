@@ -1,0 +1,6 @@
+Sorted container: 
+Container contains 4 elements.
+0: It is Parallelepiped: a = 1, b = 2, c = 4. Surface square = 28
+1: It is Parallelepiped: a = 8, b = 16, c = 32. Surface square = 1792
+2: It is Parallelepiped: a = 64, b = 128, c = 256. Surface square = 114688
+3: It is Parallelepiped: a = 512, b = 1024, c = 2048. Surface square = 7.34003e+06

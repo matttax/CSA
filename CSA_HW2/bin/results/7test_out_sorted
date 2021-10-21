@@ -1,0 +1,5 @@
+Sorted container: 
+Container contains 3 elements.
+0: It is Regular Tetrahedron: edge = 100. Surface square = 17320.5
+1: It is Parallelepiped: a = 100, b = 100, c = 100. Surface square = 60000
+2: It is Sphere: r = 100. Surface square = 125664
