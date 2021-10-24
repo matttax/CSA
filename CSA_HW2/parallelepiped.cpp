@@ -1,4 +1,4 @@
-// rectangle.cpp - содержит методы параллелепипеда
+// parallelepiped.cpp - содержит методы параллелепипеда
 
 #include "parallelepiped.h"
 
