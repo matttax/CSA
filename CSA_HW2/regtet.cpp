@@ -1,4 +1,4 @@
-// rectangle.cpp - содержит методы правильного тетраэдра
+// regtet.cpp - содержит методы правильного тетраэдра
 
 #include "regtet.h"
 #include "math.h"
