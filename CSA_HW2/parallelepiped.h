@@ -11,7 +11,7 @@ using namespace std;
 
 class parallelepiped : public shape {
 private:
-    int a, b, c;
+    int a, b, c; // Длина, ширина, высота
 public:
     virtual ~parallelepiped() {}
 
