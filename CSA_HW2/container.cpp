@@ -1,19 +1,20 @@
+// container.cpp - содержит функции обработки контейнера
+
 #include "container.h"
 #include "shape.h"
 
+// Конструктор
 container::container(): len(0) {}
 
+// Деструктор контейнера: очищает его от всех элементов
 container::~container() {
-    clear();
-}
-
-void container::clear() {
     for(int i = 0; i < len; i++) {
         delete storage[i];
     }
     len = 0;
 }
 
+// Ввод содержимого контейнера из указанного потока
 void container::in(ifstream &ifst) {
     while(!ifst.eof()) {
         if((storage[len] = shape::static_in(ifst)) != 0) {
@@ -23,6 +24,8 @@ void container::in(ifstream &ifst) {
     len -= 1;
 }
 
+
+// Случайная генерация содержимого контейнера
 void container::in_rand(int size) {
     while(len < size) {
         if((storage[len] = shape::static_in_rand()) != nullptr) {
@@ -31,6 +34,7 @@ void container::in_rand(int size) {
     }
 }
 
+// Вывод содержимого контейнера в указанный поток
 void container::out(ofstream &ofst) {
     ofst << "Container contains " << len << " elements.\n";
     for(int i = 0; i < len; i++) {
@@ -39,6 +43,7 @@ void container::out(ofstream &ofst) {
     }
 }
 
+// Сортировка контейнера прямым выбором
 void container::straightsel_sort() {
     int min;
     for (int i = 0; i < len - 1; i++) {
