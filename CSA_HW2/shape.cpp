@@ -1,9 +1,12 @@
+// Методы для создания обобщённой фигуры
+
 #include "shape.h"
 #include "regtet.h"
 #include "parallelepiped.h"
 #include "sphere.h"
 #include "rand.h"
 
+// Ввод обобщенной фигуры
 shape *shape::static_in(ifstream &ifst) {
     shape* sh;
     int k;
@@ -23,6 +26,7 @@ shape *shape::static_in(ifstream &ifst) {
     return sh;
 }
 
+// Случайный ввод обобщенной фигуры
 shape *shape::static_in_rand() {
     int k = random20();
     shape* sh;
