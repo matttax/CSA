@@ -1,3 +1,0 @@
-/home/matttax/CLionProjects/CSA_HW1/build/CMakeFiles/edit_cache.dir
-/home/matttax/CLionProjects/CSA_HW1/build/CMakeFiles/rebuild_cache.dir
-/home/matttax/CLionProjects/CSA_HW1/build/CMakeFiles/task01.dir
