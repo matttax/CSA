@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/task01.dir/sphere.cpp.o CMakeFiles/task01.dir/parallelepiped.cpp.o CMakeFiles/task01.dir/regtet.cpp.o CMakeFiles/task01.dir/shape.cpp.o CMakeFiles/task01.dir/container.cpp.o CMakeFiles/task01.dir/main.cpp.o  -o ../bin/task01 
