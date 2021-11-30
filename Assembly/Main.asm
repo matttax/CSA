@@ -56,7 +56,8 @@ main:
     je      .next1
     PrintStrBuf errMessage1, [stdout]
     jmp     .return
-.next1:
+    
+.next1:     ; проверка второго аргумента
     PrintStrLn "Start", [stdout]
     mov     rdi, rndGen
     mov     rsi, [r13 + 8]
@@ -70,7 +71,8 @@ main:
     je      .next3
     PrintStrBuf errMessage2, [stdout]
     jmp     .return
-.next2:
+    
+.next2:         ; генерация случайных фигур
     mov     rdi, [r13 + 16]
     call    atoi
     mov     [num], eax
@@ -92,8 +94,8 @@ main:
     mov     edx, [num]
     call    InRandContainer
     jmp     .task2
-
-.next3:
+    
+.next3:     ; получение фигур из файла
     FileOpen [r13+16], "r", ifst
     mov     rdi, cont
     mov     rsi, len
@@ -102,7 +104,7 @@ main:
     call    InContainer
     FileClose [ifst]
 
-.task2:
+.task2:         ; вывод содержимого контейнера
     PrintStrLn "Filled container:", [stdout]
     PrintContainer cont, [len], [stdout]
     FileOpen [r13+24], "w", ofst1
@@ -126,12 +128,14 @@ main:
     jge     .subNanoOnly
     dec     rax
     add     rbx, 1000000000
+    
 .subNanoOnly:
     sub     rbx, [startTime+8]
     mov     [deltaTime], rax
     mov     [deltaTime+8], rbx
     PrintStrLn "Stop", [stdout]
     jmp .return
+    
 .fall1:
     PrintStr "incorrect numer of figures = ", [stdout]
     PrintInt [num], [stdout]
