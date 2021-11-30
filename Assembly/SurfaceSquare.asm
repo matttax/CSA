@@ -3,7 +3,7 @@ extern PARALLELEPIPED
 extern REGTET
 
 global SurfaceSquareSphere
-SurfaceSquareSphere:
+SurfaceSquareSphere:        ; вычисление площади поверхности сферы
 section .text
 push rbp
 mov rbp, rsp
@@ -18,7 +18,7 @@ leave
 ret
 
 global SurfaceSquareParallelepiped
-SurfaceSquareParallelepiped:
+SurfaceSquareParallelepiped:    ; вычисление площади поверхности параллелипипеда
 section .text
 push rbp
 mov rbp, rsp
@@ -39,7 +39,7 @@ leave
 ret
 
 global SurfaceSquareRegtet
-SurfaceSquareRegtet:
+SurfaceSquareRegtet:    ; вычисление площади поверхности правильного тэтраэдра
 section .text
 push rbp
 mov rbp, rsp
@@ -53,7 +53,7 @@ leave
 ret
 
 global SurfaceSquarShape
-SurfaceSquarShape:
+SurfaceSquarShape:      ; вычисление площади поверхности абстрактной фигуры.
 section .text
 push rbp
 mov rbp, rsp
