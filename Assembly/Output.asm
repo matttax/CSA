@@ -10,7 +10,7 @@ extern PARALLELEPIPED
 extern REGTET
 
 global OutSphere
-OutSphere:
+OutSphere:      ; вывод параметров сферы в файл
 section .data
     .outfmt db "It is Sphere: r = %d. Surface square = %g", 10, 0
 section .bss
@@ -35,7 +35,7 @@ leave
 ret
 
 global OutParallelepiped
-OutParallelepiped:
+OutParallelepiped:  ; вывод параметров параллелипипеда в файл
 section .data
     .outfmt db "It is Parallelepiped: a = %d, b = %d, c = %d. Surface square = %g", 10, 0
 section .bss
@@ -62,7 +62,7 @@ leave
 ret
 
 global OutRegtet
-OutRegtet:
+OutRegtet:      ; вывод параметров правильного тэтраэдра в файл
 section .data
     .outfmt db "It is Regular Tetrahedron: edge = %d. Surface square = %g", 10, 0
 section .bss
@@ -89,7 +89,7 @@ leave
 ret
 
 global OutShape
-OutShape:
+OutShape:       ; вывод параметров абстрактной фигуры в файл
 section .data
     .erShape db "Incorrect figure!", 10, 0
 section .text
@@ -122,7 +122,7 @@ leave
 ret
 
 global OutContainer
-OutContainer:
+OutContainer:       ; запись контейнера в файл
 section .data
     numFmt  db  "%d: ",0
 section .bss
