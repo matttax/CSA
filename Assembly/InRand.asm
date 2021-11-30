@@ -6,7 +6,7 @@ extern PARALLELEPIPED
 extern REGTET
 
 global Random
-Random:
+Random:     ; генератор случайных чисел по модулю 20
 section .data
     .i20     dq      20
 section .text
@@ -22,7 +22,7 @@ leave
 ret
 
 global Random3
-Random3:
+Random3:       ; генератор случайных чисел по модулю 3
 section .data
     .i3     dq      3
 section .text
@@ -38,7 +38,7 @@ leave
 ret
 
 global InRandSphere
-InRandSphere:
+InRandSphere:   ; случайный ввод параметров сферы
 section .bss
     .psph  resq 1
 section .text
@@ -52,7 +52,7 @@ leave
 ret
 
 global InRandParallelepiped
-InRandParallelepiped:
+InRandParallelepiped:   ; случайный ввод параметров параллелипипеда
 section .bss
     .pppd  resq 1
 section .text
@@ -72,7 +72,7 @@ leave
 ret
 
 global InRandRegtet
-InRandRegtet:
+InRandRegtet:   ; случайный ввод параметров правильного тетраэдра
 section .bss
     .prt  resq 1
 section .text
@@ -86,7 +86,7 @@ leave
 ret
 
 global InRandShape
-InRandShape:
+InRandShape:    ; случайный ввод параметров абстрактной фигуры
 section .bss
     .pshape     resq    1
     .key        resd    1
@@ -125,7 +125,7 @@ leave
 ret
 
 global InRandContainer
-InRandContainer:
+InRandContainer:    ; рандомное заполнение контейнера
 section .bss
     .pcont  resq    1
     .plen   resq    1
