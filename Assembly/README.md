@@ -24,4 +24,4 @@
 <br/>./task01 -n [number] [outputFileName] [sortedOutputFileName] - рандомная генерация n фигур.
 
 **Тесты:**
-<br/>6 тестов папке tests. Проверяются в том числе неоднозначные случаи.
+<br/>6 тестов папке tests.
