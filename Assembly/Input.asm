@@ -6,7 +6,7 @@ extern PARALLELEPIPED
 extern REGTET
 
 global InSphere
-InSphere:
+InSphere:       ; ввод параметров сферы из файла
 section .data
     .infmt db "%d%d",0
 section .bss
@@ -26,7 +26,7 @@ leave
 ret
 
 global InParallelepiped
-InParallelepiped:
+InParallelepiped:   ; ввод параметров параллелипипеда из файла
 section .data
     .infmt db "%d%d%d",0
 section .bss
@@ -50,7 +50,7 @@ leave
 ret
 
 global InRegtet
-InRegtet:
+InRegtet:       ; ввод параметров правильного тетраэдра из файла
 section .data
     .infmt db "%d%d",0
 section .bss
@@ -70,7 +70,7 @@ leave
 ret
 
 global InShape
-InShape:
+InShape:        ; ввод параметров абстрактной фигуры из файла
 section .data
     .tagFormat   db      "%d",0
 section .bss
@@ -122,7 +122,7 @@ leave
 ret
 
 global InContainer
-InContainer:
+InContainer:        ; заполнение контейнера из файла
 section .bss
     .pcont  resq    1
     .plen   resq    1
