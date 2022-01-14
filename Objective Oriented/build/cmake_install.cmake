@@ -1,4 +1,4 @@
-# Install script for directory: /home/matttax/CLionProjects/CSA_HW2
+# Install script for directory: /home/matttax/CLionProjects/Objective Oriented
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
